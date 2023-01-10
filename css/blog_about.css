@@ -1,0 +1,21 @@
+/* 这个 CSS 专门针对博客作者信息页来设置样式 */
+
+/* 大标题 */
+.contact {
+    position: absolute;
+    font-size: 30px;
+    left: 485px;
+    top: 95px;
+}
+.person {
+    position: absolute;
+    font-size: 15px;
+    left: 510px;
+    top: 160px;
+}
+.detail {
+    position: absolute;
+    font-size: 15px;
+    left: 510px;
+    top: 200px;
+}
