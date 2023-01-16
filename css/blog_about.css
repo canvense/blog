@@ -4,18 +4,20 @@
 .contact {
     position: absolute;
     font-size: 30px;
-    left: 485px;
+    left: 35%;
     top: 95px;
 }
+/* 人物名称 */
 .person {
     position: absolute;
     font-size: 15px;
-    left: 510px;
+    left:35%;
     top: 160px;
 }
+/* 详细信息 */
 .detail {
     position: absolute;
     font-size: 15px;
-    left: 510px;
+    left: 36%;
     top: 200px;
 }
