@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="css/blog_list.css">
 </head>
 <body>
+    <div style="position:absolute; top:15px; right:30px; color:white; z-index: 100; font-weight: bolder;"></div>
+    <script>
+        // 1.先去掉？  substr('起始的位置'，截取几个字符);
+        var params = location.search.substr(1); // uname=andy
+        // 2. 利用=把字符串分割为数组 split('=');
+        var arr = params.split('=');
+        var div = document.querySelector('div');
+        // 3.把数据写入div中
+        div.innerHTML = '欢迎您，' + arr[1] ;
+    </script>
     <!-- 导航栏 -->
     <div class="nav">
         <img src="image/logo.png" alt="">
