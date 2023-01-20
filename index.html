@@ -16,7 +16,7 @@
                 margin: 0px auto;
                 margin-top: 80px;
                 width: 350px;
-                height: 400px;
+                height: 510px;
             }
 
             #login-box h1{
@@ -79,6 +79,10 @@
             .icon-mima:before {
             content: "\e605";
             }
+            a:link{text-decoration:none ; color:black;}
+            a:visited{text-decoration:none ; color:black;}
+            a:hover {text-decoration:none ; color:rgb(94, 82, 181);}
+            a:active {text-decoration:none ; color:white;}
         </style>
 	</head>
 	<body background="image/bg.png">
@@ -87,20 +91,28 @@
 			<form action="blog_home.html">
 			<div class="input-box">
                     <i class="iconfont">&#xe609;</i>
-                    <input name="uname" id="uname" type="text" placeholder="UserName" />
+                    <input required="required" name="uname" id="uname" type="text" placeholder="UserName"  onclick="luser()"/>
 			</div>
 			<div class="input-box">
 				<i class="iconfont">&#xe605;</i>
-				<input type="password" id="pwd" placeholder="Password" />
+				<input required="required" type="password" id="pwd" placeholder="Password" onclick="lpw()"/>
 			</div>
-            <button onclick="javascript:gohome()">Sign in</button>
-                </form>
-				
-
+            <div style="padding: 13px;">
+                <p>If you do not have an account, please click the <a href="register.html"><b>registration</b></a> button to register</p>
+            </div>
+            <button onclick="javascript:home()">Sign in</button>
+            <div style="padding: 13px;">
+                <p>If you are a visitor,<a href="blog_home.html"><b>please click here</b></a>.</p>
+            </div>
+        </form>
 		</div>
         <script type="text/javascript">
-                function gohome(){
-                 window.location.href="blog_home.html";
+                function home(){
+                window.location.href="blog_home.html";
+                }
+                if("luser"==""){
+                alert("Please wirte this.");
+                return false;
                 }
             </script>
  
