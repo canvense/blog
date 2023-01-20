@@ -11,13 +11,12 @@
 <body>
     <div style="position:absolute; top:15px; right:30px; color:white; z-index: 100; font-weight: bolder;"></div>
     <script>
-        // 1.先去掉？  substr('起始的位置'，截取几个字符);
-        var params = location.search.substr(1); // uname=andy
-        // 2. 利用=把字符串分割为数组 split('=');
-        var arr = params.split('=');
+        
+        var params = location.search.substr(1); // 1.先去掉？  substr('起始的位置'，截取几个字符);
+        var arr = params.split('=');// 2. 利用=把字符串分割为数组 split('=');
         var div = document.querySelector('div');
         // 3.把数据写入div中
-        div.innerHTML = '欢迎您，' + arr[1] ;
+        div.innerHTML = '欢迎您  ' + arr[1] ;
     </script>
     <!-- 导航栏 -->
     <div class="nav">
@@ -30,7 +29,7 @@
          <a href="blog_links.html"><b>LINKS</b></a>
          <a href="#"> </a>
          <a href="#"> </a>
-         <a href="#"> </a>
+         <a href="index.html"><b>EXIT</b></a>
          <a href="#"> </a>
          <a href="#"> </a>
          <a href="#"> </a>
